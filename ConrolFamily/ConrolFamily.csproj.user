@@ -7,33 +7,33 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="CreatingReport\CreatingReport.xaml.cs">
+    <Compile Update="Forms\CreatingReport.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="RecordingExpense\RecordingExpenseWindow.xaml.cs">
+    <Compile Update="Forms\RecordingExpenseWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="RecordingIncome\RecordingIncomeWindow.xaml.cs">
+    <Compile Update="Forms\RecordingIncomeWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="ViewStatistics\ViewStatistics.xaml.cs">
+    <Compile Update="Forms\ViewStatistics.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="CreatingReport\CreatingReport.xaml">
+    <Page Update="Forms\CreatingReport.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="RecordingExpense\RecordingExpenseWindow.xaml">
+    <Page Update="Forms\RecordingExpenseWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="RecordingIncome\RecordingIncomeWindow.xaml">
+    <Page Update="Forms\RecordingIncomeWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="ViewStatistics\ViewStatistics.xaml">
+    <Page Update="Forms\ViewStatistics.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

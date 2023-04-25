@@ -3,21 +3,54 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ConrolFamily"
-        xmlns:Models="clr-namespace:ControlFamily.Models" x:Class="ConrolFamily.MainWindow"
+        xmlns:Models="clr-namespace:ControlFamily.Models" x:Class="ConrolFamily.MainWindow"       
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-        Title="Control Family" Height="500" Width="800" Background="#FFE2EBE6" WindowStartupLocation="CenterScreen">
-    <Grid Background="#FF58FF80">
+        Title="Control Family" MinHeight="500" MinWidth="800" Height="500" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid Background="#FFD2F9D4">
         <Grid.RowDefinitions>
-            <RowDefinition Height="1*"/>
-            <RowDefinition Height="1*"/>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="1*"/>
-            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
-        <Button Grid.Row="0" Grid.Column="0" Content="Додати дохід" Margin="100,90,40,50" FontFamily="Times New Roman" FontSize="20" Background="White" BorderBrush="Black" BorderThickness="2" Padding="20" Click="AddIncButton_Click"/>
-        <Button Grid.Row="0" Grid.Column="1" Content="Додати витрату" Margin="40,90,100,50" FontFamily="Times New Roman" FontSize="20" Background="White" Foreground="Black" BorderBrush="Black" BorderThickness="2" Padding="20" Click="AddExpButton_Click"/>
-        <Button Grid.Row="1" Grid.Column="0" Content="Переглянути статистику" Margin="100,50,40,90" FontFamily="Times New Roman" FontSize="20" Background="White" Foreground="Black" BorderBrush="Black" BorderThickness="2" Padding="20" Click="ViewStatisticsButton_Click"/>
-        <Button Grid.Row="1" Grid.Column="1" Content="Створити звіт" Margin="40,50,100,90" FontFamily="Times New Roman" FontSize="20" Background="White" Foreground="Black" BorderBrush="Black" BorderThickness="2" Padding="20" Click="CreatingReport_Click"/>
+        <Button Grid.Row="0" Grid.Column="0"
+                Width="250"
+                Height="80"
+                Margin="100,100,40,50"
+                Content="Додати дохід"
+                Background="#00695C"
+                Click="AddIncButton_Click"
+                Style="{StaticResource MaterialDesignRaisedButton}"
+                Foreground="White" />
+        <Button Grid.Row="0" Grid.Column="1"
+                Width="250"
+                Height="80"
+                Margin="40,100,100,50"
+                Content="Додати витрату"
+                Background="#00695C"
+                Click="AddExpButton_Click"
+                Style="{StaticResource MaterialDesignRaisedButton}"
+                Foreground="White" />
+        <Button Grid.Row="1" Grid.Column="0"
+                Width="250"
+                Height="80"
+                Margin="100,40,40,90"
+                Content="Переглянути статистику"
+                Background="#00695C"
+                Click="ViewStatisticsButton_Click"
+                Style="{StaticResource MaterialDesignRaisedButton}"
+                Foreground="White" />
+        <Button Grid.Row="1" Grid.Column="1"
+                Width="250"
+                Height="80"
+                Margin="40,40,100,90"
+                Content="Створити звіт"
+                Background="#00695C"
+                Click="CreatingReport_Click"
+                Style="{StaticResource MaterialDesignRaisedButton}"
+                Foreground="White" />
     </Grid>
 </Window>
